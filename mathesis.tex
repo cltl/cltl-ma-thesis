@@ -1,0 +1,40 @@
+\documentclass[11pt]{cltlmathesis}
+\usepackage{cltlmathesis}
+\usepackage{cltlmatitle}
+
+\begin{document}
+% ----------------------------------
+% Fill in the following fields:
+
+\title{New Insights in Computational Lexicology}
+\author{Johnny B. Good}
+\fullauthor{John Bumblebee Good}	% for the declaration of Authorship	
+\supervisors{Joan Smith, Jan de Vries}		
+\reader{Summer Reads}			% 2nd reader
+
+% Comment/Uncomment the following track/degree if needed
+\track{Human Language Technology}     		
+\degree{Research Master}         		
+%\track{Text Mining}     		% or Human Language Technology
+%\degree{Master}         		% or Research Master
+
+\date{June 30, 2020}
+
+\maketitle
+% ----------------------------------
+\frontmatter
+\include{tex/abstract}
+\include{tex/declaration}
+\include{tex/acknowledgments}
+\include{tex/listoffigures} 	% you can create a list of tables in a similar fashion
+\tableofcontents
+
+% ----------------------------------
+\mainmatter
+\pagestyle{headings}
+\include{tex/introduction}
+\include{tex/tips}
+
+% ----------------------------------
+\include{tex/bibliography}
+\end{document}
