@@ -1,43 +1,89 @@
+% Template based on the ILLC's Master of Logic template, 
+% then the VUA's Master CS Standard Thesis template. 
+
 \documentclass[11pt]{cltlmathesis}
-\usepackage{cltlmathesis}
-\usepackage{cltlmatitle}
+\usepackage{cltlmathesis} % you can load extra packages in that file or after this line
+\usepackage{cltlmatitle}  
 
 \begin{document}
 % ----------------------------------
-% Fill in the following fields:
+% IMPORTANT NOTE: lines marked with TODO contain filler text that must be replaced appropriately,
+% or pointers to example or stub files 
 
-\title{New Insights in Computational Lexicology}
-\author{Johnny B. Good}
-\fullauthor{John Bumblebee Good}	% for the declaration of Authorship	
-\supervisors{Joan Smith, Jan de Vries}		
-\reader{Summer Reads}			% 2nd reader
 
-% Comment/Uncomment the following track/degree if needed
+\title{New Insights in Computational Lexicology}  % TODO 
+\author{Student name}                             % TODO
+\supervisors{Supervisor name(s)}		              % TODO
+\reader{2nd reader name}			% 2nd reader        % TODO
+
+% Select the appropriate track/degree             % TODO
 \track{Human Language Technology}     		
 \degree{Research Master}         		
-%\track{Text Mining}     		% or Human Language Technology
-%\degree{Master}         		% or Research Master
+% OR 
+%\track{Text Mining}     		
+%\degree{Master}         	
 
-\date{June 30, 2020}
+\date{June 27, 2025}  % submission date % TODO
 
 \maketitle
 % ----------------------------------
 \frontmatter
-\include{tex/abstract}
-\include{tex/declaration}
+\include{tex/abstract}        % TODO
+
+% ----------------------------------
+
+\frontchapter{Declaration of Authorship}
+
+I, \@author, declare that this thesis, titled \showtitle\
+ and the work presented in it are my own. I confirm that:
+\begin{itemize}
+\item This work was done wholly or mainly while in candidature for a \@degree degree at this University.
+\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+\item Where I have consulted the published work of others, this is always clearly attributed.
+\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+\item I have acknowledged all main sources of help.
+\item Where the thesis is based on work done by myself jointly with others, I have made
+clear exactly what was done by others and what I have contributed myself.
+\end{itemize}
+
+\vspace{4cm}
+
+\noindent
+Date: $<$date$>$                  % TODO  
+\vspace{1cm}
+
+\noindent
+Signed: $<$student signature$>$   % TODO 
+  
+% ----------------------------------
+
+% TODO acknowledgments, list of figures and tables are optional
 \include{tex/acknowledgments}
-\include{tex/listoffigures} 	% you can create a list of tables in a similar fashion
+\include{tex/listoffigures} 	
+\include{tex/listoftables} 	
 \tableofcontents
 
 % ----------------------------------
 \mainmatter
 \pagestyle{headings}
-\include{tex/introduction}
-\include{tex/tips}
 
+% TODO Adapt the list of files to be included as needed.
+% NOTE You may divide the text body in as many files as you see fit.
+% Using one file per chapter generally forms a good trade-off
+% between logical division and file length.
+\include{tex/introduction}
+\include{tex/methodology}
+\include{tex/results}
+\include{tex/discussion}
+\include{tex/conclusion}
+
+
+% TODO if you need appendices 
 \appendix
-\include{tex/appendixA}
+\include{tex/appendix}
 
 % ----------------------------------
-\include{tex/bibliography}
+% TODO replace by your own bibliography
+\bibliography{bib/example}
 \end{document}
+

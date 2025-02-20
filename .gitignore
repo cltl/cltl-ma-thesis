@@ -1,7 +1,10 @@
-**/*.log
-**/*.lof
-**/*.bbl
-**/*.blg
-**/*.aux
-**/*.out
-**/*.toc
+*.log
+*.lof
+*.bbl
+*.blg
+*.aux
+*.lot
+*.out
+*.toc
+*.bcf
+*.xml

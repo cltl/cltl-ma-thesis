@@ -2,7 +2,7 @@
 % Author: Sophie Arnoult
 % Based on columbidaeTitle.sty: https://en.wikibooks.org/wiki/LaTeX/Title_Creation
 % ----------------------------------------------------------------
-\ProvidesPackage{cltlmatitle}[2020/03/04 v0.1]
+\ProvidesPackage{cltlmatitle}[2025/02/26 v0.2]
 \RequirePackage{graphicx}
 
 \newcommand*{\track}[1]{\gdef\@track{#1}%
@@ -15,51 +15,60 @@
 
 \newcommand*{\reader}[1]{\gdef\@reader{#1}%
 }
-\newcommand*{\@reader}{Summer Reads}
+\newcommand*{\@reader}{Supervisor name}
 
 \newcommand*{\supervisors}[1]{\gdef\@supervisors{#1}%
 }
-\newcommand*{\@supervisors}{Joan Smith}
-\newcommand*{\showtitle}{{\em \@title}}
+\newcommand*{\@supervisors}{Supervisor name}
+
+\newcommand*{\@studentnumber}{Student number}
+\newcommand*{\@wordcount}{Word count}
+
+\newcommand*{\showtitle}{\textit{\@title}}
 
 \renewcommand*{\maketitle}{%
   \pagestyle{empty}
   \begin{titlepage}
     \centering
   
+    \includegraphics[width=0.5\textwidth]{VU_logo_RGB-01.jpg}
+
     {\Large\@degree\ Thesis\\}
     \vspace{2cm}
     {\Huge\@title\\}
     \vspace{1.2cm}
     {\huge\@author\\}
 
+    \vspace{1.2cm}
+   \begin{tabular}{rl}
+     {\Large Supervisor} & {\Large\@supervisors}\\
+	    {\Large 2$^{nd}$ reader} & {\Large\@reader}\\
+	&\\
+    \end{tabular} 
     \vspace{2cm}
-    \parbox{0.7\textwidth}{\centering\large\em a thesis submitted in partial fulfilment of the requirements for the degree of}\\
+    \vfill
+    \parbox{0.7\textwidth}{\centering\large\em a thesis submitted in fulfillment of the requirements for the degree of}\\
     \vspace{0.4cm}
-    {\Large \bf MA Linguistics}\\
+    {\Large \textbf{MA Linguistics}}\\
     \vspace{0.1cm}
     {\large (\@track)}
 
-    \vspace{2cm}
-    {\Large {\bf Vrije Universiteit Amsterdam}} \\
+    \vspace{1cm}
+    {\Large \textbf{Vrije Universiteit Amsterdam}} \\
     \vspace{0.4cm}
-    {\Large  Computational Lexicology and Terminology Lab}\\
+    {\Large  Computational Linguistics and Text-Mining Lab}\\
     \vspace{0.1cm}
 	{\Large Department of Language and Communication}\\
     \vspace{0.1cm}
 	{\Large Faculty of Humanities}
-    \vspace{2.0cm}
-
-    \includegraphics[width=0.5\textwidth]{VU_logo_RGB-01.jpg}
-
-    \vfill
+    \vspace{1.0cm}
 
    \begin{tabular}{rl}
-     Supervised by: & \@supervisors\\
-	2$^{nd}$ reader: & \@reader\\
-	&\\
-     Submitted: & \@date
+     Date& \@date\\
+     Student number& \@studentnumber\\
+     Word count& \@wordcount
     \end{tabular} 
+
   
   \end{titlepage}
 }
