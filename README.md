@@ -13,6 +13,10 @@ Download this repository as a Zip file, and upload it from Overleaf: `New projec
 The main file `mathesis.tex` contains pointers to the fields that need adapting. Chapter files can be found in the
 `tex` folder, and you can use `mathesis.sty` to list additional packages.
 
+### Word count
+
+You can use the `Word count` action from the Overleaf menu to get a word count for your thesis.
+
 ## LaTeX tips
 
 ### Documentation
@@ -45,7 +49,7 @@ and otherwise as _(author, year)_:
 
 - _The ABC model (Smith and de Vries, 2024) ..._
 
-An example bibliography is provided in `tex/bibliography.tex`. You can replace it by your own. You may want to use a bibliography management package
+An example bibliography is provided in `bib/example.bib`. You can replace it by your own. You may want to use a bibliography management package
 like [Zotero](https://www.zotero.org) to keep an overview and extract a bibliography file automatically.
 
 ## Issues and improvements
